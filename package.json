@@ -1,0 +1,16 @@
+{
+  "name": "api-test-automation",
+  "version": "1.0.0",
+  "description": "API Integration Testing Automation",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "api-tests-production": "newman run tests/api.postman_collection.json -e tests/production_environment.json",
+    "api-tests-local": "newman run tests/api.postman_collection.json -e tests/localhost_environment.json"
+  },
+  "author": "Kannan",
+  "dependencies": {
+    "newman": "^5.1.2"
+  }
+}
