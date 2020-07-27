@@ -6,7 +6,7 @@
     "test": "tests"
   },
   "scripts": {
-    "api-tests-production": "newman run tests/api.postman_collection.json -e tests/production_environment.json",
+    "api-tests-production": "newman run tests/api.tests.json",
     "api-tests-local": "newman run tests/api.postman_collection.json -e tests/localhost_environment.json"
   },
   "author": "Kannan",
