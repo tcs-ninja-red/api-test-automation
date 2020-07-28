@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "d735afc3-cb9d-4a12-9566-49b8a9df81c3",
+		"_postman_id": "1e19d2b0-b837-4b07-b042-68e909d71183",
 		"name": "Finance API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -14,7 +14,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "119df2c2-d36c-4a3f-b5b6-391679c8ac11",
+								"id": "87d34233-153c-43fc-992e-7f6fe275e34b",
 								"exec": [
 									"pm.test(\"Successful POST request\", function () {\r",
 									"    pm.expect(pm.response.code).to.be.oneOf([201,202]);\r",
@@ -67,7 +67,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "5197337c-3e0d-460d-be6b-0775abc70e8b",
+								"id": "690f7c02-a68c-429e-af49-415b6f73a127",
 								"exec": [
 									"pm.test(\"Status code is 422\", function () {\r",
 									"    pm.response.to.have.status(422);\r",
@@ -120,7 +120,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "832101e1-bedc-4439-a350-2c94a9ca241f",
+								"id": "884e6fd2-a53e-4b93-9c09-b344f7509566",
 								"exec": [
 									"pm.test(\"Successful POST request\", function () {\r",
 									"    pm.expect(pm.response.code).to.be.oneOf([201,202]);\r",
@@ -173,7 +173,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "0d774d79-3f56-4f5e-b21d-3df4e673293e",
+								"id": "513b05c1-eb1d-48b4-a606-171d6cd8ee4e",
 								"exec": [
 									"pm.test(\"Successful POST request\", function () {\r",
 									"    pm.expect(pm.response.code).to.be.oneOf([201,202]);\r",
@@ -226,7 +226,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a9d7983d-0507-4541-95b8-27f9c4d612ec",
+								"id": "e3e9576a-5070-4e01-a599-4b3f60511a83",
 								"exec": [
 									"pm.test(\"Successful POST request\", function () {\r",
 									"    pm.expect(pm.response.code).to.be.oneOf([201,202]);\r",
@@ -288,7 +288,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "8d1807a7-6b0f-4423-9f1f-6ae71a7e7b56",
+										"id": "46033095-08db-4d92-8436-a31e4674df67",
 										"exec": [
 											"pm.test(\"Status code is 200\", function () {\r",
 											"    pm.response.to.have.status(200);\r",
@@ -373,7 +373,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "d2da3855-60ba-4be1-bcc9-e20fa7a79598",
+										"id": "3e395e17-b63c-43e2-b486-c8d4f1ea18d3",
 										"exec": [
 											"pm.test(\"Status code is 200\", function () {\r",
 											"    pm.response.to.have.status(200);\r",
@@ -486,7 +486,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "f643164f-d9b9-4b8d-9763-91e6404f832e",
+										"id": "c3afee9e-850b-457c-ae0d-1641f3047bbe",
 										"exec": [
 											"pm.test(\"Status code is 200\", function () {\r",
 											"    pm.response.to.have.status(200);\r",
@@ -595,7 +595,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "40db8028-1565-472a-aa2e-7a1c542ba758",
+										"id": "3b68ef89-3570-451c-bfbe-ddeea750a5f8",
 										"exec": [
 											"pm.test(\"Status code is 200\", function () {\r",
 											"    pm.response.to.have.status(200);\r",
@@ -704,6 +704,20 @@
 				},
 				{
 					"name": "GetVehicleInfo - api/v1/vehicles/VH01",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c46c9ec4-cb7c-4287-a20a-7e72d909e839",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -829,6 +843,20 @@
 				},
 				{
 					"name": "GetMakes - api/v1/vehicles/makes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "beff8e8e-854b-4d3a-b91e-fdf11a1e8864",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -849,6 +877,20 @@
 				},
 				{
 					"name": "GetModels - api/v1/vehicles/makes/Ferrari/models",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f247b310-2e15-4997-a62c-5a700f8cc97d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -871,6 +913,20 @@
 				},
 				{
 					"name": "GetDescriptions - api/v1/vehicles/makes/Ferrari/models/430 Scuderia/descriptions",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5c120e84-573a-4ac4-875c-3d35a1905d3d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -901,6 +957,20 @@
 			"item": [
 				{
 					"name": "GetDealers - api/v1/dealers",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "97815fc5-c481-4033-9b70-b14f7fbd077a",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -920,6 +990,20 @@
 				},
 				{
 					"name": "GetDealersByFilter - api/v1/dealers?postcode=",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2e4eedf5-d2f3-4cee-a217-c0047c9a5772",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -1007,6 +1091,20 @@
 				},
 				{
 					"name": "GetMakesByDealerId - api/v1/vehicles/makes?dealer_id=50010001",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fe54d326-7c07-4d95-88dc-8b12a1ecb18a",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -1043,7 +1141,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "6e79b63a-1149-471e-997e-7ca15ac76e3f",
+								"id": "94ca2c22-856f-4f94-96b6-15aca2041042",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -1088,7 +1186,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "a1dc2fbc-2a44-40f5-9cb1-35cdf9aa7bbc",
+						"id": "fb5b9d48-35ca-4fcd-91e3-921b42477bb5",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
